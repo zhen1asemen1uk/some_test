@@ -1,0 +1,150 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    min-height: 60px;
+
+    padding: 0 20px;
+
+    user-select: none;
+}
+
+header:first-child {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+nav {
+    display: flex;
+    gap: 20px;
+
+    text-transform: uppercase;
+
+    font-size: 16px;
+}
+
+nav span {
+    color: silver;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#one:checked + .nav_block span,
+#two:checked + .nav_block span {
+    color: orange;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.conteiner_blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.wrapper_block {
+    display: flex;
+    gap: 20px;
+
+    cursor: pointer;
+}
+
+.wrapper_block span {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    display: flex;
+    align-items: center;
+
+    height: 8px;
+    width: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.block {
+    position: relative;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    min-width: 100px;
+    min-height: 100px;
+
+    padding: 2px;
+}
+
+.block_color {
+    border-radius: 10px;
+
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#green:checked + .wrapper_block,
+#pink:checked + .wrapper_block,
+#blue:checked + .wrapper_block {
+    opacity: 0.5;
+}
+
+.block_color span {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    user-select: none;
+
+    opacity: 0.5;
+}
+
+.bg_green {
+    background: rgb(36, 183, 23);
+}
+
+.bg_pink {
+    background: rgb(247, 18, 255);
+}
+
+.bg_blue {
+    background: rgb(0, 106, 255);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+input {
+    display: none;
+}
